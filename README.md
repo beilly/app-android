@@ -1,4 +1,4 @@
-##Abook
+##vcreditapp
 ======
 
 注意:
@@ -13,6 +13,7 @@
 - versionName(版本名称);
 - appName(app名称)
 - projectName(项目打包名称)
+- applicationId(appid)
 
 ###多渠道打包
 
