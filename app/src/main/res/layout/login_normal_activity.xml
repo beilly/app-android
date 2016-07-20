@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/iconfont_titlebar"
+        layout="@layout/common_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/iv_login_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="64dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_heightPercent="25%w"
+        app:layout_widthPercent="25%w"
+        app:siBorderWidth="1dp"
+        app:siBorderColor="@color/img_si_border"/>
+
+    <TextView
+        android:id="@+id/tv_login_name"
+        style="@style/tv_16_333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="@string/app_name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:fillViewport="true">
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            style="@style/login_layout_content">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/layout_reset_pwd">
+
+                    <ImageView
+                        android:id="@+id/iv_icon"
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/phone" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        style="@style/tv_14_66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/iv_icon"
+                        android:text="@string/str_phone" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        style="@style/tv_15_333"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/tv_title"
+                        android:background="@color/transparent"
+                        android:singleLine="true"
+                        android:hint="@string/str_enter_mobile_number" />
+
+                </RelativeLayout>
+
+                <include
+                    style="@style/dividing_line_20"
+                    layout="@layout/common_dividing_line" />
+
+                <RelativeLayout style="@style/layout_reset_pwd">
+
+                    <ImageView
+                        android:id="@id/iv_icon"
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/password" />
+
+                    <TextView
+                        android:id="@id/tv_title"
+                        style="@style/tv_14_66"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/iv_icon"
+                        android:text="@string/str_new_pwd" />
+
+                    <com.vcredit.view.PasswordView
+                        android:id="@+id/et_pwd"
+                        style="@style/tv_15_333"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_toRightOf="@id/tv_title"
+                        android:background="@color/transparent"
+                        android:hint="@string/hint_invalid_password"
+                        android:text="" />
+
+                </RelativeLayout>
+
+                <include
+                    style="@style/dividing_line_20"
+                    layout="@layout/common_dividing_line" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    style="@style/btn_style_1_1"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/str_login" />
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+            <TextView
+                android:id="@+id/tv_register"
+                style="@style/btn_style_tv"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="27dp"
+                android:text="@string/str_register"/>
+
+            <TextView
+                android:id="@+id/tv_forget_pwd"
+                style="@style/btn_style_tv"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="27dp"
+                android:gravity="right"
+                android:text="@string/str_forget_pwd" />
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+    </ScrollView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>

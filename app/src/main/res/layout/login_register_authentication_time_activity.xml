@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/iconfont_titlebar"
+        layout="@layout/common_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <com.zhy.android.percent.support.PercentLinearLayout style="@style/login_layout_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.vcredit.view.RoundProgressBar
+                    android:id="@+id/first_roundBar"
+                    style="@style/register_roundBar"
+                    android:layout_alignParentLeft="true"
+                    app:roundColor="@color/round_color"
+                    app:roundProgressColor="@color/progress_color"
+                    app:textColor="@color/round_text_color"
+                    app:textSize="@dimen/fontSize_14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@id/first_roundBar"
+                    android:orientation="horizontal">
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dot_gray1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@id/first_roundBar"
+                    android:orientation="horizontal">
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                </LinearLayout>
+
+                <com.vcredit.view.RoundProgressBar
+                    android:id="@+id/second_roundBar"
+                    style="@style/register_roundBar"
+                    android:layout_centerInParent="true"
+                    app:roundColor="@color/round_color"
+                    app:roundProgressColor="@color/progress_color"
+                    app:textColor="@color/round_text_color"
+                    app:textSize="@dimen/fontSize_14" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@id/second_roundBar"
+                    android:orientation="horizontal">
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                    <View style="@style/split_dot_orange" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dot_gray2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_toRightOf="@id/second_roundBar"
+                    android:orientation="horizontal">
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+                    <View style="@style/split_dot_gray" />
+
+
+                </LinearLayout>
+
+                <com.vcredit.view.RoundProgressBar
+                    android:id="@+id/third_roundBar"
+                    style="@style/register_roundBar"
+                    android:layout_alignParentRight="true"
+                    app:roundColor="@color/round_color"
+                    app:roundProgressColor="@color/progress_color"
+                    app:textColor="@color/round_text_color"
+                    app:textSize="@dimen/fontSize_14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    style="@style/tv_14_66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="登录" />
+
+                <TextView
+
+                    style="@style/tv_14_66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:text="同步数据" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="计算" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/authentication_btn_complete"
+                style="@style/btn_style_1"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:enabled="true"
+                android:text="@string/str_authentication_complete" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+
+</LinearLayout>

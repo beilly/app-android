@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="calendarViewStyle">@style/Widget.Holo.CalendarView</item>
+        <item name="datePickerStyle">@style/Widget.Holo.DatePicker</item>
+    </style>
+
+</resources>

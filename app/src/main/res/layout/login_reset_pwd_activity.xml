@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/activity">
+
+    <include
+        android:id="@+id/iconfont_titlebar"
+        layout="@layout/common_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/tv_16_333"
+        android:gravity="center"
+        android:layout_marginTop="56dp"
+        android:text="@string/str_reset_pwd"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <com.zhy.android.percent.support.PercentLinearLayout
+            style="@style/login_layout_content" >
+
+            <RelativeLayout
+                style="@style/layout_reset_pwd">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/phone"/>
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_icon"
+                    android:layout_marginLeft="12dp"
+                    style="@style/tv_14_66"
+                    android:text="@string/str_phone"/>
+                
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_title"
+                    android:background="@color/transparent"
+                    android:layout_marginLeft="30dp"
+                    android:singleLine="true"
+                    android:hint="@string/hint_enter_register_phone"
+                    style="@style/tv_15_333"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_dividing_line"
+                style="@style/dividing_line_20"/>
+
+            <RelativeLayout
+                style="@style/layout_reset_pwd">
+
+                <ImageView
+                    android:id="@id/iv_icon"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/verification_code"/>
+
+                <TextView
+                    android:id="@id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_icon"
+                    android:layout_marginLeft="12dp"
+                    style="@style/tv_14_66"
+                    android:text="@string/str_verification_code"/>
+
+                <EditText
+                    android:id="@+id/et_verification_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_title"
+                    android:layout_toLeftOf="@+id/btn_dynamic_getCode"
+                    android:background="@color/transparent"
+                    android:layout_marginLeft="30dp"
+                    android:singleLine="true"
+                    android:hint="@string/hint_enter_verify_code"
+                    style="@style/tv_15_333"/>
+                
+                <Button
+                    android:id="@+id/btn_dynamic_getCode"
+                    android:layout_width="70dp"
+                    android:background="@color/bg_main"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/str_get_verification_code"
+                    style="@style/btn_style_tv"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_dividing_line"
+                style="@style/dividing_line_20"/>
+
+            <RelativeLayout
+                style="@style/layout_reset_pwd">
+
+                <ImageView
+                    android:id="@id/iv_icon"
+                    android:layout_width="12dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/password"/>
+
+                <TextView
+                    android:id="@id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_icon"
+                    android:layout_marginLeft="12dp"
+                    style="@style/tv_14_66"
+                    android:text="@string/str_new_pwd"/>
+
+                <com.vcredit.view.PasswordView
+                    android:id="@+id/et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_title"
+                    android:background="@color/transparent"
+                    android:layout_marginLeft="30dp"
+                    android:hint="@string/str_invalid_password"
+                    style="@style/tv_15_333"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/common_dividing_line"
+                style="@style/dividing_line_20"/>
+            
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_marginTop="30dp"
+                android:text="@string/str_change"
+                style="@style/btn_style_1_1"/>
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+    </ScrollView>
+
+</LinearLayout>

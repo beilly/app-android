@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_01"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_02"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_03"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_04"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_05"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_06"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_07"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_08"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_09"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_10"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_11"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_12"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_13"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_14"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_15"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_16"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_17"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_18"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_19"
+            android:gravity="center"/>
+    </item>
+    <item
+        android:duration="50" >
+        <clip
+            android:clipOrientation="horizontal"
+            android:drawable="@mipmap/refresh_20"
+            android:gravity="center"/>
+    </item>
+</animation-list>

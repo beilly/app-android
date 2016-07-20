@@ -1,0 +1,12 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:color="@color/btn_enabele">
+    <corners
+        android:radius="20dp" />
+    <stroke
+        android:width="0dp"
+        android:color="@color/btn_enabele" />
+    <solid
+        android:color="@color/btn_enabele" />
+</shape>

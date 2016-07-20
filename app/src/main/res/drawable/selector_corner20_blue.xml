@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/shape_corner20_gray" android:state_enabled="false" />
+    <!-- 触摸模式下单击时的背景颜色 -->
+    <item android:drawable="@drawable/shape_corner20_blue2" android:state_pressed="true" />
+    <item android:drawable="@drawable/shape_corner20_blue"/>
+</selector>

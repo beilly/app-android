@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+        classpath group: 'org.tmatesoft.svnkit', name: 'svnkit', version: '1.8.11'
+        classpath 'com.mcxiaoke.gradle:packer-ng:1.0.5'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compileSdkVersion = 22
+    buildToolsVersion = "22.0.1"
+    minSdkVersion = 14
+    targetSdkVersion = 22
+
+    //发布(release)时修改此处的版本号
+    versionCode = 201
+    versionName = "2.0.1"
+
+    appName = "维信基础框架"
+    projectName = "app"
+    applicationId = "com.vcredit." + projectName.toLowerCase()
+}

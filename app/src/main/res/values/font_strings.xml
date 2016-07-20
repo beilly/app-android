@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_add">&#xe618;</string>
+    <string name="icon_title_back">&#xe60b;</string>
+    <string name="icon_title_home">&#xe60c;</string>
+</resources>

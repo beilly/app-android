@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <!-- 子界面窗口 -->
+
+    <FrameLayout
+        android:id="@+id/main_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" >
+    </FrameLayout>
+
+    <!-- 底部导航栏 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_main_navigation"
+        android:layout_above="@+id/main_layout_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/main_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="@color/bg_main"
+        android:orientation="horizontal"
+        android:paddingTop="0.5dp" >
+
+        <LinearLayout
+            android:id="@+id/main_tabBill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/nav_item_layout_style">
+
+            <TextView
+                android:id="@+id/main_textBill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nav_item_text_style"
+                android:text="@string/tab_bill_title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_tabCredit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/nav_item_layout_style">
+
+            <TextView
+                android:id="@+id/main_textCredit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nav_item_text_style"
+                android:text="@string/tab_credit_title"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_tabMine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/nav_item_layout_style">
+
+            <TextView
+                android:id="@+id/main_textMine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/nav_item_text_style"
+                android:text="@string/tab_mine_title"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

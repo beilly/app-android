@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--状态栏-->
+    <com.vcredit.view.StatusBarLayout
+        android:id="@+id/title_statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/bg_titlbar" />
+
+    <RelativeLayout
+        android:id="@+id/title_rlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@color/bg_titlbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:maxWidth="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:paddingLeft="15dp"
+                android:src="@mipmap/back"
+                android:textColor="@color/font_black"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/title_left_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:maxWidth="80dp"
+                android:text=""
+                android:singleLine="true"
+                android:textColor="@color/font_black"
+                android:textSize="@dimen/fontSize_18" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title_middle_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxWidth="224dp"
+            android:text=""
+            android:singleLine="true"
+            android:textColor="@color/font_black"
+            android:textSize="@dimen/fontSize_18" />
+
+        <ImageView
+            android:id="@+id/title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingRight="16dp"
+            android:paddingLeft="50dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

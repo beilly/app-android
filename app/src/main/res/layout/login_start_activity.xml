@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/activity">
+
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/abook_start_title"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            style="@style/tv_16_333"/>
+
+        <TextView
+            android:id="@+id/tv_tips_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            style="@style/tv_12_66"
+            android:layout_marginBottom="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/abook_start_login_tips"/>
+        
+        <Button
+            android:id="@+id/btn_regrister"
+            android:layout_marginBottom="30dp"
+            android:layout_above="@id/tv_tips_buttom"
+            android:layout_centerHorizontal="true"
+            android:text="@string/abook_start_register"
+            android:enabled="true"
+            style="@style/btn_style_1_1"/>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</LinearLayout>
