@@ -17,7 +17,24 @@ def getSvnRevision() {
     }
 }
 
-def CVSVersionCode = getSvnRevision();
+def getGitVersion() {
+    try {
+        def git = org.ajoberstar.grgit.Grgit.open();
+        def gitVersionName = "${git.head().id}";
+        return gitVersionName;
+    }catch (Exception e){
+        e.printStackTrace();
+        return "0"
+    }
+}
+
+def CVSVersionCode = "0";
+//使用SVN管理代码打开这一段
+CVSVersionCode = getSvnRevision();
+if ("0".equalsIgnoreCase(CVSVersionCode.toString())){
+    //使用Git管理代码打开这一段
+    CVSVersionCode = getGitVersion();
+}
 
 def compileSdk = rootProject.ext.compileSdkVersion
 def buildTools = rootProject.ext.buildToolsVersion
