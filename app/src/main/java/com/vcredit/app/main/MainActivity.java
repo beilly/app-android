@@ -8,9 +8,6 @@ import android.widget.TextView;
 
 import com.vcredit.base.AbsBaseActivity;
 import com.vcredit.app.R;
-import com.vcredit.app.main.bill.BillFragment;
-import com.vcredit.app.main.credit.CreditFragment;
-import com.vcredit.app.main.mine.MineFragment;
 import com.vcredit.global.App;
 import com.vcredit.global.OnTabItemClickListenner;
 
@@ -54,23 +51,23 @@ public class MainActivity extends AbsBaseActivity{
         // tab按钮 与 关联模块
         tabMap = new HashMap<>();
         // 首页
-        tabMap.put(R.id.main_textBill, new Submodule(
-                null,
-                new int[]{},
-                (TextView) findViewById(R.id.main_textBill),
-                new BillFragment()));
-        //
-        tabMap.put(R.id.main_textCredit, new Submodule(
-                null,
-                new int[]{},
-                (TextView) findViewById(R.id.main_textCredit),
-                new CreditFragment()));
-        //
-        tabMap.put(R.id.main_tabMine, new Submodule(
-                null,
-                new int[]{},
-                (TextView) findViewById(R.id.main_textMine),
-                new MineFragment()));
+//        tabMap.put(R.id.main_textBill, new Submodule(
+//                null,
+//                new int[]{},
+//                (TextView) findViewById(R.id.main_textBill),
+//                new BillFragment()));
+//        //
+//        tabMap.put(R.id.main_textCredit, new Submodule(
+//                null,
+//                new int[]{},
+//                (TextView) findViewById(R.id.main_textCredit),
+//                new CreditFragment()));
+//        //
+//        tabMap.put(R.id.main_tabMine, new Submodule(
+//                null,
+//                new int[]{},
+//                (TextView) findViewById(R.id.main_textMine),
+//                new MineFragment()));
 
 
         // 向fragment容器中添加首页

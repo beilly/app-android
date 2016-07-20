@@ -7,7 +7,6 @@ import com.vcredit.base.AbsBaseActivity;
 import com.vcredit.app.entities.UserData;
 import com.vcredit.app.main.MainActivity;
 import com.vcredit.app.main.login.LoginActivity;
-import com.vcredit.app.main.login.StartActivity;
 import com.vcredit.global.Constants;
 import com.vcredit.global.InterfaceConfig;
 import com.vcredit.utils.CommonUtils;
@@ -116,7 +115,7 @@ public abstract class BaseLoginActivity extends AbsBaseActivity {
      */
     protected void openLoginPage() {
         instance.saveValue(SharedPreUtils.USER_AUTOLOGIN, false);
-        LoginActivity.launch(this, StartActivity.class);
+        launch(this, LoginActivity.class);
         finish();
     }
 
