@@ -10,27 +10,26 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import butterknife.BindView;
 import com.vcredit.app.R;
 import com.vcredit.app.main.common.BaseLoginActivity;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.Bind;
-
 /**
  * Created by chenlei on 2016/3/30.
  */
 public class IntroduceActivity extends BaseLoginActivity {
-    @Bind(R.id.intr_viewpager)
+    @BindView(R.id.intr_viewpager)
     ViewPager intrViewpager;
-    @Bind(R.id.intr_view1)
+    @BindView(R.id.intr_view1)
     View intrView1;
-    @Bind(R.id.intr_view2)
+    @BindView(R.id.intr_view2)
     View intrView2;
-    @Bind(R.id.intr_view3)
+    @BindView(R.id.intr_view3)
     View intrView3;
-    @Bind(R.id.intr_btn_close)
+    @BindView(R.id.intr_btn_close)
     Button intrBtnClose;
     private int[] RES = new int[]{R.mipmap.guide_pages01, R.mipmap.guide_pages02, R.mipmap.guide_pages03};
     private List<View> viewList = new ArrayList<>();

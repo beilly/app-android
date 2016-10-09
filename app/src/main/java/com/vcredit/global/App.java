@@ -6,7 +6,6 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.support.multidex.MultiDexApplication;
 
-import com.facebook.drawee.backends.pipeline.Fresco;
 import com.mcxiaoke.packer.helper.PackerNg;
 import com.squareup.leakcanary.LeakCanary;
 import com.umeng.analytics.AnalyticsConfig;
@@ -141,7 +140,6 @@ public class App extends MultiDexApplication {
         super.onCreate();
         appInstance = this;
         iconFont =  Typeface.createFromAsset(getAssets(), AppConfig.ICONFONT_PATH);
-        Fresco.initialize(getApplicationContext());
 
         MobclickAgent.setDebugMode(AppConfig.DEBUG);
         // 如果没有使用PackerNg打包添加渠道，默认返回的是""

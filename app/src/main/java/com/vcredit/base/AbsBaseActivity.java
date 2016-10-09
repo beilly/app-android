@@ -4,11 +4,13 @@ import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 
 import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
  * Created by shibenli on 2016/7/6.
  */
 public abstract class AbsBaseActivity extends BaseActivity{
+    Unbinder bind = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +19,7 @@ public abstract class AbsBaseActivity extends BaseActivity{
         int layout = layout();
         if (layout > 0) {
             setContentView(layout);
-            ButterKnife.bind(this);
+            bind = ButterKnife.bind(this);
             initView();
         }
     }
@@ -33,8 +35,6 @@ public abstract class AbsBaseActivity extends BaseActivity{
 
         // step 2 初始化数据（如果该页需从其他界面或接口获得数据请在此方法中获取，无需要则无需该方法）
         initData();
-        // step 3 数据绑定（获取数据后在此方法中对控件进行赋值）
-        dataBind();
     }
 
     /**
@@ -47,10 +47,6 @@ public abstract class AbsBaseActivity extends BaseActivity{
      */
     protected abstract void initData();
 
-    /**
-     * 数据绑定
-     */
-    protected abstract void dataBind();
 
     /**
      * 输入数据有效性检测
@@ -58,5 +54,12 @@ public abstract class AbsBaseActivity extends BaseActivity{
      */
     protected boolean inputCheck(){
         return true;
+    }
+
+    @Override protected void onDestroy() {
+        super.onDestroy();
+        if (bind != null) {
+            bind.unbind();
+        }
     }
 }

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import butterknife.BindView;
 import com.vcredit.app.R;
 import com.vcredit.app.entities.UserData;
 import com.vcredit.app.main.MainActivity;
@@ -27,7 +28,6 @@ import com.vcredit.view.TitleBuilder;
 import java.util.HashMap;
 import java.util.Map;
 
-import butterknife.Bind;
 import butterknife.OnClick;
 
 /**
@@ -36,14 +36,14 @@ import butterknife.OnClick;
  */
 public class LoginActivity extends AbsBaseActivity implements TextWatcher {
     //手机号码
-    @Bind(R.id.et_phone)
+    @BindView(R.id.et_phone)
     protected TextView etPhone;
 
     //登录密码
-    @Bind(R.id.et_pwd)
+    @BindView(R.id.et_pwd)
     protected TextView etPassword;
 
-    @Bind(R.id.btn_login)
+    @BindView(R.id.btn_login)
     protected Button btnLogin;
 
     @Override

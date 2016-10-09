@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.View;
 import android.widget.TextView;
 
+import butterknife.Unbinder;
 import com.vcredit.base.AbsBaseActivity;
 import com.vcredit.app.R;
 import com.vcredit.global.App;
@@ -20,9 +21,10 @@ import butterknife.OnClick;
  * Created by shibenli on 2016/7/6.
  */
 public class MainActivity extends AbsBaseActivity{
+
     @Override
     protected int layout() {
-        return 0;
+        return R.layout.main_navigation_activity;
     }
 
     @Override
@@ -31,15 +33,8 @@ public class MainActivity extends AbsBaseActivity{
     }
 
     @Override
-    protected void dataBind() {
-
-    }
-
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_navigation_activity);
-        ButterKnife.bind(this);
 
         instantiation();
     }
@@ -150,11 +145,6 @@ public class MainActivity extends AbsBaseActivity{
         App.getInstance().exitBy2Click(this);
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        ButterKnife.unbind(this);
-    }
 
     /**
      * 子模块

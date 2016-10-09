@@ -14,11 +14,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.LinearLayout;
 
+import butterknife.BindView;
 import com.vcredit.app.R;
 import com.vcredit.base.BaseActivity;
 import com.vcredit.view.TitleBuilder;
 
-import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -52,7 +52,7 @@ public class ShowWithWebViewActivity extends BaseActivity {
 
     WebView webView;
 
-    @Bind(R.id.layout_btn)
+    @BindView(R.id.layout_btn)
     View btnLayout;
 
     TitleBuilder titleBuilder;

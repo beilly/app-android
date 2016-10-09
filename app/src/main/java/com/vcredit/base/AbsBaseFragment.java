@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import butterknife.Unbinder;
 import com.vcredit.global.OnClickFragmentListenner;
 import com.vcredit.utils.CommonUtils;
 
@@ -95,6 +96,5 @@ public abstract class AbsBaseFragment extends BaseFragment implements View.OnCli
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        ButterKnife.unbind(this);
     }
 }

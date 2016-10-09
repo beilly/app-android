@@ -31,7 +31,7 @@ import com.vcredit.global.App;
 import com.vcredit.global.AppConfig;
 import com.vcredit.service.DownloadService;
 
-import org.apache.commons.lang3.ArrayUtils;
+import org.apache.commons.lang3a.ArrayUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
