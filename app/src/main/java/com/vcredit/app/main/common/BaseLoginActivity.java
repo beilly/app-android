@@ -53,11 +53,6 @@ public abstract class BaseLoginActivity extends AbsBaseActivity {
 
     }
 
-    @Override
-    protected void dataBind() {
-
-    }
-
     //自动登录
     protected void login() {
         Map<String, Object> map = new HashMap<>();

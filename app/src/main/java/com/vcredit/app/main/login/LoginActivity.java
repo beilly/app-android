@@ -59,11 +59,6 @@ public class LoginActivity extends AbsBaseActivity implements TextWatcher {
 
     @Override
     protected void initData() {
-
-    }
-
-    @Override
-    protected void dataBind() {
         etPhone.addTextChangedListener(this);
         etPassword.addTextChangedListener(this);
     }
