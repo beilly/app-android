@@ -114,4 +114,17 @@
             <enum name="FILL" value="1"/>
         </attr>
     </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="leftIcon" format="reference" />
+        <attr name="rightIcon" format="reference" />
+        <attr name="rightText" format="string" />
+        <attr name="isTransparent" format="boolean" />
+        <attr name="titleMiddle" format="string" />
+        <attr name="titleType" format="enum">
+            <enum name="withBackIcon" value="0" />
+            <enum name="withRightIcon" value="1" />
+            <enum name="withAllIcon" value="2" />
+        </attr>
+    </declare-styleable>
 </resources>

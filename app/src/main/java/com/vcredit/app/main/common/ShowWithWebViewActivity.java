@@ -17,10 +17,10 @@ import android.widget.LinearLayout;
 import butterknife.BindView;
 import com.vcredit.app.R;
 import com.vcredit.base.BaseActivity;
-import com.vcredit.view.TitleBuilder;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import com.vcredit.view.TitleBar;
 
 /**
  * 整个的页面WebView。\n
@@ -55,7 +55,8 @@ public class ShowWithWebViewActivity extends BaseActivity {
     @BindView(R.id.layout_btn)
     View btnLayout;
 
-    TitleBuilder titleBuilder;
+    @BindView(R.id.titlebar)
+    TitleBar titleBuilder;
     private String title;
 
     @Override
@@ -116,7 +117,7 @@ public class ShowWithWebViewActivity extends BaseActivity {
     }
 
     private void initTitleBar() {
-        titleBuilder = new TitleBuilder(this, R.id.titlebar).withBackIcon().setMiddleTitleText(title).withHomeIcon().isBackgroundTransparent();
+        titleBuilder.withBackIcon().setMiddleTitleText(title).withHomeIcon().isBackgroundTransparent();
     }
 
     @Override

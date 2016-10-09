@@ -11,6 +11,8 @@ import butterknife.BindView;
 import com.vcredit.app.R;
 import com.vcredit.app.entities.UserData;
 import com.vcredit.app.main.MainActivity;
+import com.vcredit.app.main.common.PopWithWebViewActivity;
+import com.vcredit.app.main.common.ShowWithWebViewActivity;
 import com.vcredit.base.AbsBaseActivity;
 import com.vcredit.global.Constants;
 import com.vcredit.global.InterfaceConfig;
@@ -23,7 +25,6 @@ import com.vcredit.utils.TooltipUtils;
 import com.vcredit.utils.VerifyUtils;
 import com.vcredit.utils.net.AbsRequestListener;
 import com.vcredit.utils.net.RequestListener;
-import com.vcredit.view.TitleBuilder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -49,12 +50,6 @@ public class LoginActivity extends AbsBaseActivity implements TextWatcher {
     @Override
     protected int layout() {
         return R.layout.login_normal_activity;
-    }
-
-    @Override
-    protected void initTitleBar() {
-        super.initTitleBar();
-        new TitleBuilder(this, R.id.iconfont_titlebar).withBackIcon().isBackgroundTransparent();
     }
 
     @Override
@@ -96,10 +91,11 @@ public class LoginActivity extends AbsBaseActivity implements TextWatcher {
             }
             break;
             case R.id.tv_forget_pwd: {//忘记密码
-
+                PopWithWebViewActivity.launch(this, PopWithWebViewActivity.KEY_URL, "http://www.baidu.com", PopWithWebViewActivity.class);
             }
             break;
             case R.id.tv_register: {//注册
+                ShowWithWebViewActivity.launch(this, ShowWithWebViewActivity.KEY_URL, "http://www.baidu.com", ShowWithWebViewActivity.class);
             }
             break;
 

@@ -45,7 +45,7 @@
                 android:maxWidth="80dp"
                 android:text=""
                 android:singleLine="true"
-                android:textColor="@color/font_black"
+                android:textColor="@color/bg_main"
                 android:textSize="@dimen/fontSize_18" />
         </LinearLayout>
 
@@ -58,7 +58,7 @@
             android:maxWidth="224dp"
             android:text=""
             android:singleLine="true"
-            android:textColor="@color/font_black"
+            android:textColor="@color/bg_main"
             android:textSize="@dimen/fontSize_18" />
 
         <ImageView
@@ -67,9 +67,21 @@
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:gravity="center_vertical"
-            android:paddingRight="16dp"
-            android:paddingLeft="50dp"
+            android:layout_marginRight="16dp"
             android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/title_right_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:maxWidth="52dp"
+            android:text=""
+            android:singleLine="true"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/bg_main"
+            android:textSize="@dimen/fontSize_14" />
 
     </RelativeLayout>
 

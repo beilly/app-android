@@ -160,12 +160,32 @@ public class BaseActivity extends FragmentActivity {
     }
 
     /**
-     * 启动当前界面，关闭时需返回结果
+     * 启动界面
      **/
     public static void launch(Activity self, Class<?> target) {
         Intent intent = new Intent();
         intent.setClass(self, target);
         intent.addFlags(Intent.FLAG_ACTIVITY_NO_USER_ACTION);
+        self.startActivity(intent);
+    }
+
+    /**
+     * 启动界面
+     **/
+    public static void launch(Activity self, String key, Serializable value, Class<?> target) {
+        Intent intent = new Intent();
+        intent.putExtra(key, value);
+        intent.setClass(self, target);
+        self.startActivity(intent);
+    }
+
+    /**
+     * 启动界面
+     **/
+    public static void launch(Activity self, Bundle bundle, Class<?> target) {
+        Intent intent = new Intent();
+        intent.putExtras(bundle);
+        intent.setClass(self, target);
         self.startActivity(intent);
     }
 
@@ -185,12 +205,12 @@ public class BaseActivity extends FragmentActivity {
     /**
      * 关闭当前界面，回传结果
      **/
-    public static void finishWithResult(Activity self, String key, Object value, Class<?> target, int resultCode) {
-        Intent intent = new Intent(self, target);
+    public void finishWithResult(String key, Object value, Class<?> target, int resultCode) {
+        Intent intent = new Intent(this, target);
         Bundle bundle = new Bundle();
         bundle.putSerializable(key, (Serializable) value);
         intent.putExtras(bundle);
-        self.setResult(resultCode, intent);
-        self.finish();
+        this.setResult(resultCode, intent);
+        this.finish();
     }
 }

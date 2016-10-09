@@ -5,9 +5,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <include
+    <com.vcredit.view.TitleBar
         android:id="@+id/iconfont_titlebar"
-        layout="@layout/common_titlebar"
+        app:isTransparent="true"
+        app:titleType="withBackIcon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

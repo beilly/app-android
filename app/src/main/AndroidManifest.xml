@@ -59,6 +59,9 @@
 
         <!--显示网页界面 -->
         <activity android:name="com.vcredit.app.main.common.ShowWithWebViewActivity" />
+        <!--显示网页界面 -->
+        <activity android:name="com.vcredit.app.main.common.PopWithWebViewActivity"
+            android:theme="@style/dialogTheme"/>
         <!-- 服务 - 更新下载服务 -->
         <service android:name="com.vcredit.service.DownloadService" />
 
